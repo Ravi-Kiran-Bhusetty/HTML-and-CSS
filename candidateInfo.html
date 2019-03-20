@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <h1 style="text-align: center">Candidate Information</h1>
+        <table border="3" align="center">
+            <colgroup span="2" style="background: cadetblue"></colgroup>
+            <tr>
+                <td>Name: <span style="color: red"><sup>*</sup></span></td>
+                <td> <input type="text" pattern="^[a-zA-Z]+$" title="Do not use digits" placeholder="Enter your name" required></td>
+            </tr>
+            <tr>
+                <td>Password: <span style="color: red"><sup>*</sup></span></td>
+                <td> <input type="password" placeholder="Enter password" required></td>
+            </tr>
+            <tr>
+                <td>Phone Number: <span style="color: red"><sup>*</sup></span></td>
+                <td> <input type="number" placeholder="Enter mobile number" required minlength="10" maxlength="10"></td>
+            </tr>
+            <tr>
+                <td>Gender: <span style="color: red"><sup>*</sup></span></td>
+                <td><input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="female">Female
+                </td>
+            </tr>
+            <tr>
+                <td>Date of Birth: <span style="color: red"><sup>*</sup></span></td>
+                <td><input type="date" required></td>
+            </tr>
+            <tr>
+                <td>Email: <span style="color: red"><sup>*</sup></span></td>
+                <td><input type="email" required></td>
+            </tr>
+            <tr>
+                <td> Highest Qualification: <span style="color: red"><sup>*</sup></span></td>
+                <!-- <div aria-required="false"> -->
+                    <td>
+                        <select name="qualification" required>
+                            <option selected disabled>Select Highest Qualification</option>
+                            <option value="pg">PG</option>
+                            <option value="ug" >UG</option>
+                            <option value="XII">XII</option>
+                            <option value="ssc">SSC</option>
+                        </select>
+                    </td>
+                <!-- </div> -->
+            </tr>
+            <tr>
+                <td>Courses Interested in: <span style="color: red"><sup>*</sup></span></td>
+
+                <td>
+                    <!-- <div aria-required="true"> -->
+                        <input type="checkbox" name="courses" value="java">Java
+                        <input type="checkbox" name="courses" value="html">HTML
+                        <input type="checkbox" name="courses" value="css3">CSS 3
+                        <input type="checkbox" name="courses" value="angularJS">Angular JS
+                        <input type="checkbox" name="courses" value="jquery">JQuery
+                    <!-- </div> -->
+                </td>
+
+            </tr>
+            <tr>
+                <td>Comments: (Mention external Certification if any)</td>
+                <td><textarea name="comments" cols="50" rows="3"></textarea></td>
+            </tr>
+            <tr>
+                <td>Upload Degree/ External Certificates <span style="color: red"><sup>*</sup></span></td>
+                <td><input type="file" required></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Submit Information">
+                    <input type="reset" value="Clear">
+                </td>
+            </tr>
+        </table>
+        <h4 style="color: red; text-align: center" >All fields marked with (*) are mandatory</h4>
+    </form>
+</body>
+
+</html>
